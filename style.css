@@ -1,0 +1,28 @@
+
+body {
+  margin: 0;
+  background: black;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+#menu {
+  position: relative;
+}
+#bg {
+  width: 100%;
+}
+.menu-buttons {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+}
+button {
+  margin: 10px;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+#battleCanvas {
+  background-color: black;
+  border: 2px solid white;
+}
