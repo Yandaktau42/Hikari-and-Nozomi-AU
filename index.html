@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hikari and Nozomi AU</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="menu">
+    <img src="assets/images/menu_bg.jpg" id="bg" />
+    <div class="menu-buttons">
+      <button onclick="startGame()">Play</button>
+      <button onclick="openSettings()">Pengaturan</button>
+      <button onclick="openCredits()">Credit</button>
+    </div>
+  </div>
+
+  <canvas id="battleCanvas" width="640" height="480" style="display:none;"></canvas>
+
+  <div id="dialogBox" style="display:none;">
+    <p id="dialogText"></p>
+  </div>
+
+  <div id="settings" style="display:none;">
+    <h3>Pengaturan</h3>
+    <label>Volume Musik: <input type="range" id="musicVolume" min="0" max="1" step="0.01" /></label><br/>
+    <label>Efek Suara: <input type="range" id="sfxVolume" min="0" max="1" step="0.01" /></label><br/>
+    <label>Getaran: <input type="checkbox" id="vibrationToggle" /></label><br/>
+    <button onclick="closeSettings()">Tutup</button>
+  </div>
+
+  <div id="credits" style="display:none;">
+    <p>YouTube: <a href="https://youtube.com/@ammecraft" target="_blank">Ammecraft ch</a></p>
+    <p>TikTok: @ammecraft</p>
+    <button onclick="closeCredits()">Tutup</button>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
